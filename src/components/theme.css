@@ -1,0 +1,42 @@
+/*********** TYPOGRAPHY **************/
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  line-height: 1.5;
+}
+
+/*********** LIGHT MODE **************/
+:root {
+  --ink: var(--theme-ui-colors-text);
+  --stone: var(--theme-ui-colors-background);
+  --paint: var(--theme-ui-colors-primary);
+  --wax: var(--theme-ui-colors-secondary);
+  --paper: var(--theme-ui-colors-paper);
+  --lead: var(--theme-ui-colors-lead);
+  --glass: var(--theme-ui-colors-glass);
+  --glass80: var(--theme-ui-colors-glass80);
+  --glass00: var(--theme-ui-colors-glass00);
+  --chalk: var(--theme-ui-colors-chalk);
+  --smoke: var(--theme-ui-colors-smoke);
+  --dust: var(--theme-ui-colors-dust);
+  --haze: var(--theme-ui-colors-haze);
+}
+
+
+body {
+  --main-bg: var(--stone);
+  --note-bg: var(--paper);
+  --text: var(--ink);
+  --separator: var(--lead);
+  --shadow: var(--glass00);
+  --link: var(--paint);
+
+  /* References */
+  --references-bg: var(--glass);
+  --references-bg-80: var(--glass80);
+  --references-bg-0: var(--glass00);
+  --references-text: var(--lead);
+  --references-highlight: var(--wax);
+}
