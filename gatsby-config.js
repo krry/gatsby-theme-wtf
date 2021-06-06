@@ -5,9 +5,17 @@ module.exports = options => {
     contentPath = './notes'
   } = options;
   return {
+    flags: {
+      DEV_SSR: false,
+      FAST_DEV: true,
+      PRESERVE_WEBPACK_CACHE: true,
+      PRESERVE_FILE_DOWNLOAD_CACHE: false,
+      PARALLEL_SOURCING: true,
+      FUNCTIONS: true,
+    },
     siteMetadata: {
       title: `wtfsby`,
-      description: `wtfsby will make you break fast`,
+      description: `One Easeness professional's second brain's public commonplace zettelkasten kept as a digital garden.`,
       siteUrl: `https://sby.kerrbear.wtf`
     },
     plugins: [
