@@ -3,7 +3,7 @@ import { MDXProvider } from "@mdx-js/react";
 import * as components from "./mdx-components";
 import MDXRenderer from "./mdx-components/mdx-renderer";
 import ReferencesBlock from "./references-block";
-import { LinkToStacked } from "react-stacked-pages-hook";
+import { LinkToSlip } from "react-slips-hook";
 
 const Note = (data) => {
   const AnchorTag = (props) => (
@@ -15,9 +15,9 @@ const Note = (data) => {
       {data.partOf ? (
         <div>
           Part of{" "}
-          <LinkToStacked to={data.partOf.slug}>
+          <LinkToSlip to={data.partOf.slug}>
             {data.partOf.title}
-          </LinkToStacked>
+          </LinkToSlip>
         </div>
       ) : null}
       <MDXProvider components={{ ...components, a: AnchorTag }}>

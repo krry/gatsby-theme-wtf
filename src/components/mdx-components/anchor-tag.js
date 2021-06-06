@@ -4,7 +4,7 @@ import { withPrefix } from "gatsby";
 import Tippy from "@tippyjs/react";
 import { MDXProvider } from "@mdx-js/react";
 import MDXRenderer from "./mdx-renderer";
-import { LinkToStacked } from "react-stacked-pages-hook";
+import { LinkToSlip } from "react-slips-hook";
 
 import "./anchor-tag.css";
 
@@ -70,9 +70,9 @@ export const AnchorTag = ({
       </div>
     );
     child = (
-      <LinkToStacked {...restProps} to={ref.slug} title={title}>
+      <LinkToSlip {...restProps} to={ref.slug} title={title}>
         {content}
-      </LinkToStacked>
+      </LinkToSlip>
     );
   } else {
     content = restProps.children;

@@ -19,3 +19,9 @@
 .reference > div > ul {
   margin: 0;
 }
+
+.reference > h1,
+.reference > h2,
+.reference {
+  color: red;
+}

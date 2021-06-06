@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  LinkToStacked,
+  LinkToSlip,
   PageIndexProvider,
-  useStackedPage,
-} from "react-stacked-pages-hook";
+  useSlip,
+} from "react-slips-hook";
 
 import "./note-wrapper.css";
 
@@ -14,7 +14,7 @@ function noteContainerClassName({ overlay, obstructed, highlighted } = {}) {
 }
 
 const NoteWrapper = ({ children, slug, title }) => {
-  const [, state, i] = useStackedPage();
+  const [, state, i] = useSlip();
 
   return (
     <div
@@ -22,9 +22,9 @@ const NoteWrapper = ({ children, slug, title }) => {
       style={{ left: 40 * (i || 0), right: -585 }}
     >
       <div className="note-content">{children}</div>
-      <LinkToStacked to={slug} className="obstructed-label">
+      <LinkToSlip to={slug} className="obstructed-label">
         {title}
-      </LinkToStacked>
+      </LinkToSlip>
     </div>
   );
 };

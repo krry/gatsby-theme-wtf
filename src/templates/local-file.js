@@ -1,8 +1,8 @@
 import { graphql } from "gatsby";
 
-import StackedLayout from "../components/stacked-layout";
+import SlipLayout from "../components/slip-layout";
 
-export default StackedLayout;
+export default SlipLayout;
 
 export const pageQuery = graphql`
   query($id: String!) {
